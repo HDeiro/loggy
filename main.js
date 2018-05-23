@@ -47,11 +47,9 @@ function buildMenu () {
 			label: "File",
 			submenu: [
 				{
-					label: "Open",
+					label: "Open a Log",
 					accelerator: "Ctrl+O",
-					click: () => {
-						console.log('Menu has open');
-					}
+					click: () => mainWindow.webContents.send('open-file')
 				}
 			]
 		}

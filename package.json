@@ -19,5 +19,8 @@
   "author": "Hugo Deiró",
   "devDependencies": {
     "electron": "^2.0.0"
+  },
+  "dependencies": {
+    "line-reader": "^0.4.0"
   }
 }
