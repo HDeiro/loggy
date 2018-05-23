@@ -1,0 +1,23 @@
+{
+  "name": "Loggy",
+  "version": "1.0.0",
+  "description": "A minimal Electron application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "inspect": "electron --inspect=5858 .",
+    "sass": "sass styles/style.scss:style.css --watch --style compressed"
+  },
+  "repository": "https://github.com/HDeiro/loggy.git",
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "author": "Hugo Deiró",
+  "devDependencies": {
+    "electron": "^2.0.0"
+  }
+}
