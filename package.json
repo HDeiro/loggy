@@ -21,6 +21,7 @@
     "electron": "^2.0.0"
   },
   "dependencies": {
-    "line-reader": "^0.4.0"
+    "line-reader": "^0.4.0",
+    "open": "0.0.5"
   }
 }

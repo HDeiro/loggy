@@ -1,3 +1,8 @@
+*, * * {
+    font-family: UbuntuMono;
+    box-sizing: border-box;
+}
+
 body {
     background: $color-background;
 }
@@ -5,14 +10,110 @@ body {
 table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
+    background: white;
     width: 100%;
+    border-radius: 4px;
+    margin-top: 16px;
+}
+
+.input-wrapper {
+    background: white;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    padding: 4px;
+    margin-top: 16px;
+
+    input {
+        border: none;
+        width: 100%;
+        font-size: 14px;
+        outline: none;
+    }
 }
 
 td, th {
     text-align: left;
     padding: 8px;
+    font-size: 12px;
 }
 
 tr:nth-child(even) {
-    background-color: #dddddd;
+    background-color: $color-tr;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.flex-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.chip {
+    padding: 8px 12px;
+    background: $color-tr;
+    border-radius: 30px;
+    display: inline-block;
+    cursor: pointer;
+    margin: 2px;
+
+    span {
+        font-weight: 600;
+    }
+
+    &.outlined {
+        background: white;
+        border: 2px solid $color-tr;
+        transition: background 300ms ease-out;
+        float: right;
+        
+        &:hover {
+            background: $color-tr;
+        }
+    }
+
+    &.info {
+        border-color: $color-info !important;
+        color: $color-info;
+
+        &:hover {
+            color: white;
+            background: $color-info !important;
+        }
+    }
+
+    &.error {
+        border-color: $color-error !important;
+        color: $color-error;
+
+        &:hover {
+            color: white;
+            background: $color-error !important;
+        }
+    }
+
+    &.warning {
+        border-color: $color-warning !important;
+        color: $color-warning;
+
+        &:hover {
+            color: white;
+            background: $color-warning !important;
+        }
+    }
+}
+
+//Specific styles
+#filePath {
+    max-width: 50%;
+}
+
+button[type="submit"] {
+    border-radius: 30px;
+    height: 30px;
+    width: 120px;
+    border: none;
 }
