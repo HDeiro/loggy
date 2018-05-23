@@ -8,6 +8,7 @@ const BrowserWindow = electron.BrowserWindow;
 
 const path = require('path');
 const url = require('url');
+const open = require("open");
 
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
@@ -52,6 +53,10 @@ function buildMenu () {
 					click: () => mainWindow.webContents.send('open-file')
 				}
 			]
+		},
+		{
+			label: "About",
+			click: () => open("https://github.com/HDeiro/loggy")
 		}
 	]));
 }
